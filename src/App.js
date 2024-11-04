@@ -12,7 +12,7 @@ import './index.css';
 const App = () => {
   return (
     <CartProvider>
-      <Router>
+      <Router basename="/My_Grocery_Store_Website"> {/* Update this line */}
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />

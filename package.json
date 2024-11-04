@@ -2,6 +2,7 @@
   "name": "my-grocery-store-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://me-mitali24.github.io/My_Grocery_Store_Website",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
@@ -9,6 +10,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.47",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -21,7 +23,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
